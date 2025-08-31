@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Follower of Mustard Subclass + Spells</name>
+    <author>Your Name</author>
+    <update version="1.0" />
+  </info>
+
+  <!-- Subclass Definition -->
+  <element name="Follower of Mustard" type="Subclass" source="Homebrew" id="ID_SUBCLASS_FOLLOWER_MUSTARD">
+    <description>
+      <p>The Follower of Mustard is a Warlock subclass devoted to the mysterious power of mustard and mango phonk. 
+      Adept at summoning shadowy figures, controlling the battlefield with chaos, and blending necrotic and thunder damage, 
+      followers manipulate both flavor and force with devastating effect.</p>
+    </description>
+    <class id="ID_WARLOCK_CLASS" name="Warlock"/>
+    <features>
+      <feature level="1" name="Mustard Pact Spells">
+        <description>
+          <p>You gain access to the following expanded spell list unique to your Follower of Mustard subclass:</p>
+          <ul>
+            <li>1st Level: Mango, Mango's Gift, Mustard Jet</li>
+            <li>3rd Level: Phonk</li>
+            <li>4th Level: Trollge Slam</li>
+            <li>5th Level: 6 7</li>
+            <li>6th Level: The Man Who Speaks in Mangoes, The Man Who Speaks in Mustard</li>
+            <li>6th Level Ritual: The Beast Who Blasts Mango Phonk</li>
+          </ul>
+        </description>
+      </feature>
+    </features>
+    <spells>
+      <spell level="1" id="ID_SPELL_MANGO"/>
+      <spell level="1" id="ID_SPELL_MANGOS_GIFT"/>
+      <spell level="1" id="ID_SPELL_MUSTARD_JET"/>
+      <spell level="3" id="ID_SPELL_PHONK"/>
+      <spell level="4" id="ID_SPELL_TROLLGE_SLAM"/>
+      <spell level="5" id="ID_SPELL_67"/>
+      <spell level="6" id="ID_SPELL_MAN_MANGOES"/>
+      <spell level="6" id="ID_SPELL_MAN_MUSTARD"/>
+      <spell level="6" id="ID_SPELL_BEAST_MANGO_PHONK"/>
+    </spells>
+  </element>
+
+  <!-- Spell Definitions -->
+
+  <!-- 6 7 Spell -->
+  <element name="6 7" type="Spell" source="Homebrew" id="ID_SPELL_67">
+    <description>
+      <p><em>5th-level necromancy</em></p>
+      <p><strong>Casting Time:</strong> 1 action</p>
+      <p><strong>Range:</strong> 50 ft circle</p>
+      <p><strong>Components:</strong> V, S</p>
+      <p><strong>Duration:</strong> Concentration, up to 1 minute</p>
+      <p>Create a 50 ft circle of darkness that turns bright light to dim light and dim light to complete darkness. 
+      The caster can see as if in bright light. Every turn, roll a d8; if it rolls 6 or 7, each creature in the area takes 3d8 necrotic damage.</p>
+    </description>
+    <spellcasting>
+      <level>5</level>
+      <school>Necromancy</school>
+      <time>1 action</time>
+      <range>50 ft</range>
+      <components>V, S</components>
+      <duration>Concentration, up to 1 minute</duration>
+      <classes>
+        <class id="ID_WARLOCK_CLASS" name="Warlock"/>
+      </classes>
+    </spellcasting>
+  </element>
+
+  <!-- Mango Spell -->
+  <element name="Mango" type="Spell" source="Homebrew" id="ID_SPELL_MANGO">
+    <description>
+      <p><em>1st-level necromancy</em></p>
+      <p>Projectile of darkness, 2d8 necrotic damage on hit. Upcast adds hallucination debuff. Synergizes with 6 7: duplicates and hits multiple targets.</p>
+    </description>
+    <spellcasting>
+      <level>1</level>
+      <school>Necromancy</school>
+      <time>1 action</time>
+      <range>60 feet</range>
+      <components>V, S</components>
+      <duration>Instantaneous</duration>
+      <classes>
+        <class id="ID_WARLOCK_CLASS" name="Warlock"/>
+      </classes>
+    </spellcasting>
+  </element>
+
+  <!-- Phonk Spell -->
+  <element name="Phonk" type="Spell" source="Homebrew" id="ID_SPELL_PHONK">
+    <description>
+      <p><em>3rd-level evocation</em></p>
+      <p>Loud phonk erupts in a 20 ft radius, STR or DEX save or knocked prone. If 6 7 is active: deals 4d8 thunder damage plus prone.</p>
+    </description>
+    <spellcasting>
+      <level>3</level>
+      <school>Evocation</school>
+      <time>1 action</time>
+      <range>30 feet</range>
+      <components>V</components>
+      <duration>Concentration, up to 1 minute</duration>
+      <classes>
+        <class id="ID_WARLOCK_CLASS" name="Warlock"/>
+      </classes>
+    </spellcasting>
+  </element>
+
+  <!-- The Man Who Speaks in Mangoes -->
+  <element name="The Man Who Speaks in Mangoes" type="Spell" source="Homebrew" id="ID_SPELL_MAN_MANGOES">
+    <description>
+      <p><em>6th-level necromancy</em></p>
+      <p>Summon a medium shadowy humanoid with trollge face. AC 1, HP 50, speed 15 ft., attacks once per turn for 3d8 necrotic damage.</p>
+    </description>
+    <spellcasting>
+      <level>6</level>
+      <school>Necromancy</school>
+      <time>1 action</time>
+      <range>30 feet</range>
+      <components>V, S</components>
+      <duration>Concentration, up to 10 minutes</duration>
+      <classes>
+        <class id="ID_WARLOCK_CLASS" name="Warlock"/>
+      </classes>
+    </spellcasting>
+  </element>
+
+  <!-- The Man Who Speaks in Mustard -->
+  <element name="The Man Who Speaks in Mustard" type="Spell" source="Homebrew" id="ID_SPELL_MAN_MUSTARD">
+    <description>
+      <p><em>6th-level necromancy</em></p>
+      <p>Summon medium shadowy humanoid with Kendrick Lamar face. AC 18, HP 15, speed 60 ft., attacks twice per turn for 3d4 necrotic damage each.</p>
+    </description>
+    <spellcasting>
+      <level>6</level>
+      <school>Necromancy</school>
+      <time>1 action</time>
+      <range>30 feet</range>
+      <components>V, S</components>
+      <duration>Concentration, up to 10 minutes</duration>
+      <classes>
+        <class id="ID_WARLOCK_CLASS" name="Warlock"/>
+      </classes>
+    </spellcasting>
+  </element>
+
+  <!-- The Beast Who Blasts Mango Phonk -->
+  <element name="The Beast Who Blasts Mango Phonk" type="Spell" source="Homebrew" id="ID_SPELL_BEAST_MANGO_PHONK">
+    <description>
+      <p><em>6th-level necromancy (ritual)</em></p>
+      <p>Requires 6 7 active. Large shadow beast, AC 15, HP 100, speed 15 ft. Aura disables movement within 10 ft. Attacks twice per turn with 8d8 necrotic, knockback 30 ft. Ritual: 8 turns uninterrupted to summon.</p>
+    </description>
+    <spellcasting>
+      <level>6</level>
+      <school>Necromancy</school>
+      <time>8 turns (ritual)</time>
+      <range>30 feet</range>
+      <components>V, S</components>
+      <duration>Concentration, up to 1 minute</duration>
+      <classes>
+        <class id="ID_WARLOCK_CLASS" name="Warlock"/>
+      </classes>
+    </spellcasting>
+  </element>
+
+  <!-- Mango's Gift -->
+  <element name="Mango's Gift" type="Spell" source="Homebrew" id="ID_SPELL_MANGOS_GIFT">
+    <description>
+      <p><em>1st-level conjuration</em></p>
+      <p>Conjure a magical glowing mango. Recipient chooses: 1d6 HP heal, 1d20 temporary HP for one attack, or custom effect.</p>
+    </description>
+    <spellcasting>
+      <level>1</level>
+      <school>Conjuration</school>
+      <time>1 action</time>
+      <range>30 feet</range>
+      <components>V, S</components>
+     
